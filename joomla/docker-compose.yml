@@ -1,0 +1,19 @@
+version: '3.1' #Version
+
+services:
+  joomla:
+    image: joomla #Imagen joomla
+    restart: always #Reinicio siempre, se hace seguidamente
+    links:
+      - joomladb:mysql  #Base de datos de joomla
+    ports:
+      - 8080:80 #Puerto usados
+    environment:
+      JOOMLA_DB_HOST: joomladb #Host de joomla
+      JOOMLA_DB_PASSWORD: example #Contraseña que contendrá nuestro servidor joomla
+
+  joomladb: #Propiedades de la base de datos de joomla
+    image: mysql:5.6 #Version de la imagen de la base de datos
+    restart: always #Reinicio siempre, es decir, que se vaya actualizando
+    environment:
+      MYSQL_ROOT_PASSWORD: example #Contraseña de la base de datos
