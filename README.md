@@ -4,8 +4,8 @@
 
 ## Tutoriales actualmente publicados:
 
-  *Despligue Moodle
-  *Presta Shop
-  *Publicar Pagina Web
-  *RubyRails
-  *Joomla
+  * Despligue Moodle
+  * Presta Shop
+  * Publicar Pagina Web
+  * RubyRails
+  * Joomla
